@@ -56,6 +56,12 @@ public class Startup
                 In = ParameterLocation.Header,
                 Description = "Insira o token JWT aqui"
             });
+            options.SwaggerDoc("v1", new OpenApiInfo
+{
+    Title = "API de Veículos - Versão Personalizada por Lana",
+    Version = "v1",
+    Description = "Projeto baseado no curso, adaptado e customizado por Lana Blackthorn."
+});
 
             options.AddSecurityRequirement(new OpenApiSecurityRequirement
             {
